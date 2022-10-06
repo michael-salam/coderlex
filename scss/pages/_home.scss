@@ -1,0 +1,91 @@
+.header {
+    background: linear-gradient(to bottom, $colorPrimaryLight, $colorPrimary);
+    // overflow-x: hidden;
+
+    .container {
+        width: 95%;
+        margin-left: auto;
+        margin-right: 1rem;
+        display: flex;
+        align-items: center;
+        height: 80vh;
+        padding: 1rem;
+
+        @include breakpoint-down(tablet) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .left {
+            flex: 1;
+            padding-right: 2rem;
+
+            @include breakpoint-down(tablet) {
+                order: 1;
+                margin-top: 1rem;
+                padding: 0;
+            }
+
+            .heading {
+                margin-bottom: 2rem;
+
+                .main {
+                    font-size: clamp(2rem, -0.8148rem + 5.9259vw, 5rem);
+                    line-height: 1.2;
+                    margin-bottom: 1rem;
+
+                    span {
+                        color: $colorSecondary;
+                    }
+                }
+
+                .sub {
+                    font-size: clamp(0.875rem, 0.8009rem + 0.3704vw, 1.125rem);
+                    font-weight: 400;
+                    color: $colorNeutralMid;
+                    line-height: 1.6;
+                    width: 80%;
+
+                    @include breakpoint-down(mobile-md) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .learn-more {
+                padding: 1.25rem 4rem;
+                font-size: 1rem;
+
+                @include breakpoint-down(laptop) {
+                    padding: 1rem 3.5rem;
+                }
+
+                @include breakpoint-down(tablet) {
+                    padding: 1rem 3rem;
+                }
+
+                @include breakpoint-down(mobile-md) {
+                    padding: 0.875rem 2rem;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        .right {
+            flex: 1;
+            border-radius: 0.25rem;
+            transform: rotate(10deg);
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to bottom, rgba($colorPrimaryLight, 0.6), rgba($colorPrimary, 0.6)), url(../../images/fly-d-zAhAUSdRLJ8-unsplash.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @include breakpoint-down(tablet) {
+                transform: rotate(0deg);
+            }
+        }
+    }
+}
