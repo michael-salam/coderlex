@@ -89,3 +89,36 @@
         }
     }
 }
+
+.services {
+
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+        // gap: 1rem;
+
+        .service {
+            padding: 3rem;
+            background-color: $colorPrimaryLight;
+            border-radius: 0.25rem;
+            margin: 0.5rem;
+
+            .img-container {
+                width: 5rem;
+                background-color: rgba($colorSecondary, 0.04);
+                border-radius: 0.25rem;
+                padding: 1rem;
+            }
+
+            .heading {
+                margin: 1rem 0 1.5rem 0;
+            }
+
+            .copy {
+                font-size: 0.875rem;
+                line-height: 1.7;
+                color: $colorNeutralMid;
+            }
+        }
+    }
+}
