@@ -339,7 +339,7 @@ ul {
   border-radius: 0.25rem;
   transform: rotate(10deg);
   overflow: hidden;
-  background-image: linear-gradient(to bottom, rgba(17, 24, 35, 0.6), rgba(13, 17, 22, 0.6)), url(../../images/fly-d-zAhAUSdRLJ8-unsplash.jpg);
+  background-image: linear-gradient(to bottom, rgba(17, 24, 35, 0.6), rgba(13, 17, 22, 0.6)), url(../../images/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -361,10 +361,32 @@ ul {
   margin: 0.5rem;
 }
 .services-container .service .img-container {
-  width: 5rem;
+  height: 8rem;
   background-color: rgba(59, 215, 243, 0.04);
   border-radius: 0.25rem;
-  padding: 1rem;
+  padding: 0.5rem;
+}
+.services-container .service .img-container .img {
+  height: 100%;
+  border-radius: 0.25rem;
+}
+.services-container .service .img-container .img#ethical-hacking {
+  background-image: linear-gradient(to bottom, rgba(13, 17, 22, 0.2), rgba(13, 17, 22, 0.2)), url(../../images/ethical-hacking.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services-container .service .img-container .img#social-media {
+  background-image: linear-gradient(to bottom, rgba(13, 17, 22, 0.2), rgba(13, 17, 22, 0.2)), url(../../images/social-media.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.services-container .service .img-container .img#crypto {
+  background-image: linear-gradient(to bottom, rgba(13, 17, 22, 0.2), rgba(13, 17, 22, 0.2)), url(../../images/crypto-coin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .services-container .service .heading {
   margin: 1rem 0 1.5rem 0;
@@ -385,13 +407,18 @@ ul {
 }
 .why-us .left {
   flex: 1;
-  background-image: url(../../images/mika-baumeister-J5yoGZLdpSI-unsplash.jpg);
+  margin-right: 3rem;
+  border-radius: 0.25rem;
+  background-color: rgba(59, 215, 243, 0.04);
+  padding: 0.5rem;
+}
+.why-us .left .img {
+  height: 100%;
+  background-image: url(../../images/professional.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 3rem;
   border-radius: 0.25rem;
-  overflow: hidden;
 }
 @media (max-width: 47.9375em) {
   .why-us .left {
