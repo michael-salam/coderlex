@@ -191,7 +191,7 @@ ul {
   margin-left: auto;
   margin-right: 1rem;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   height: 80vh;
   padding: 1rem;
 }
@@ -204,6 +204,7 @@ ul {
 .header .container .left {
   flex: 1;
   padding-right: 2rem;
+  align-self: center;
 }
 @media (max-width: 47.9375em) {
   .header .container .left {
@@ -260,8 +261,6 @@ ul {
   border-radius: 0.25rem;
   transform: rotate(10deg);
   overflow: hidden;
-  height: 100%;
-  width: 100%;
   background-image: linear-gradient(to bottom, rgba(17, 24, 35, 0.6), rgba(13, 17, 22, 0.6)), url(../../images/fly-d-zAhAUSdRLJ8-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -295,7 +294,7 @@ ul {
 
 .why-us {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   width: 95%;
   margin-left: auto;
   margin-right: auto;
@@ -303,60 +302,71 @@ ul {
 @media (max-width: 47.9375em) {
   .why-us {
     display: block;
+    width: 100%;
   }
 }
 .why-us .left {
-  flex: 3;
+  flex: 1;
+  background-image: url(../../images/mika-baumeister-J5yoGZLdpSI-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 3rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
 }
 @media (max-width: 47.9375em) {
   .why-us .left {
-    margin-bottom: 2rem;
+    height: 40vh;
+    margin: 3rem 1rem 2rem 1rem;
   }
-}
-.why-us .left .heading {
-  margin-bottom: 1rem;
-  width: 80%;
-}
-@media (max-width: 47.9375em) {
-  .why-us .left .heading {
-    width: 100%;
-  }
-}
-.why-us .left .heading .sub {
-  font-weight: 300;
-}
-.why-us .left .copy {
-  width: 80%;
-}
-@media (max-width: 47.9375em) {
-  .why-us .left .copy {
-    width: 100%;
-  }
-}
-.why-us .left .copy:not(:last-child) {
-  margin-bottom: 0.5rem;
 }
 .why-us .right {
-  flex: 2;
+  flex: 1;
 }
 @media (max-width: 47.9375em) {
   .why-us .right {
     flex: 1;
+    padding: 0 1rem;
   }
+}
+.why-us .right .heading {
+  margin-bottom: 1rem;
+  width: 80%;
+}
+@media (max-width: 47.9375em) {
+  .why-us .right .heading {
+    width: 100%;
+  }
+}
+.why-us .right .heading .sub {
+  font-weight: 300;
+}
+.why-us .right .copy {
+  width: 80%;
+}
+@media (max-width: 47.9375em) {
+  .why-us .right .copy {
+    width: 100%;
+  }
+}
+.why-us .right .copy:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 .why-us .right .points {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
   gap: 1rem;
+  margin-top: 2rem;
 }
 .why-us .right .points .point .img-container {
   display: grid;
   place-content: center;
   width: 4rem;
   height: 4rem;
-  border-radius: 50%;
+  border-radius: 0.25rem;
   margin-bottom: 0.5rem;
-  background-color: rgba(59, 215, 243, 0.04);
+  background-color: rgba(59, 215, 243, 0.1);
 }
 .why-us .right .points .point .img-container img {
   width: 2rem;
@@ -365,6 +375,56 @@ ul {
 .why-us .right .points .point p {
   font-weight: 600;
   color: #ccc;
+}
+
+.metrics {
+  background: linear-gradient(to right bottom, #111823, #0D1116);
+  border-radius: 0.25rem;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 47.9375em) {
+  .metrics {
+    width: unset;
+    display: grid;
+    place-content: center;
+    margin: 0 1rem;
+    padding: 3rem 1rem;
+  }
+}
+.metrics .metric {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+@media (max-width: 47.9375em) {
+  .metrics .metric {
+    margin-left: 0;
+  }
+}
+.metrics .metric:not(:last-child) {
+  border-right: 1px solid #3BD7F3;
+  padding-right: 2rem;
+}
+@media (max-width: 47.9375em) {
+  .metrics .metric:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid #3BD7F3;
+    padding-right: 0;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+.metrics .metric .count {
+  font-weight: 900;
+  font-size: clamp(2.5rem, 1.9074rem + 2.963vw, 4.5rem);
+  color: #3BD7F3;
+  margin-right: 1rem;
+}
+.metrics .metric .item {
+  font-size: clamp(0.875rem, 0.7639rem + 0.5556vw, 1.25rem);
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */
