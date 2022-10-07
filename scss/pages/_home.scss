@@ -264,6 +264,7 @@
 }
 
 .testimonials {
+
     @include breakpoint-down(tablet) {
         padding: 0 1rem;
     }
