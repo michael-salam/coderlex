@@ -52,11 +52,12 @@ ul {
 
 .section {
   width: 95%;
-  margin: 3rem auto;
+  margin: 5rem auto;
 }
 @media (max-width: 23.375em) {
   .section {
     width: 100%;
+    margin: 3rem auto;
   }
 }
 .section h2.heading {
@@ -425,6 +426,35 @@ ul {
 .metrics .metric .item {
   font-size: clamp(0.875rem, 0.7639rem + 0.5556vw, 1.25rem);
   font-weight: 300;
+}
+
+@media (max-width: 47.9375em) {
+  .testimonials {
+    padding: 0 1rem;
+  }
+}
+.testimonials-container {
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 0.5rem;
+}
+.testimonials-container .testimonial {
+  min-width: 20rem;
+  padding: 2rem;
+  background-color: #111823;
+  border-radius: 0.25rem;
+}
+@media (max-width: 26.5em) {
+  .testimonials-container .testimonial {
+    min-width: 85%;
+  }
+}
+.testimonials-container .testimonial:not(:last-child) {
+  margin-right: 1rem;
+}
+.testimonials-container .testimonial .name {
+  font-weight: 700;
+  margin-top: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

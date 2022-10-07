@@ -262,3 +262,36 @@
         }
     }
 }
+
+.testimonials {
+    @include breakpoint-down(tablet) {
+        padding: 0 1rem;
+    }
+
+    &-container {
+        display: flex;
+        overflow-x: scroll;
+        padding-bottom: 0.5rem;
+
+        .testimonial {
+            min-width: 20rem;
+            padding: 2rem;
+            background-color: $colorPrimaryLight;
+            border-radius: 0.25rem;
+
+            @include breakpoint-down(mobile-md) {
+                min-width: 85%;
+            }
+
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            .name {
+                font-weight: 700;
+                margin-top: 0.5rem;
+            }
+        }
+    }
+
+}

@@ -58,10 +58,11 @@ ul {
 
 .section {
     width: 95%;
-    margin: 3rem auto;
+    margin: 5rem auto;
 
     @include breakpoint-down(mobile) {
         width: 100%;
+        margin: 3rem auto;
     }
 
     & h2.heading {
