@@ -94,9 +94,21 @@ ul {
     }
 }
 
+.header.sub-page {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    padding: 1rem 3rem;
+    height: 30vh;
+    background-color: rgba($colorAccent, 0.8);
+
+    .heading {
+        font-size: clamp(2rem, -0.8148rem + 5.9259vw, 5rem);
+    }
+}
+
 
 // navbar styles
-
 .brandname {
     a {
         color: $colorAccent;
@@ -150,8 +162,8 @@ ul {
             align-items: center;
 
             @include breakpoint-down(tablet) {
-                text-align: center;
-                padding-top: 5rem;
+                // text-align: left;
+                padding: 5rem 3rem;
                 position: absolute;
                 top: 4.5rem;
                 right: 0;
@@ -254,6 +266,8 @@ ul {
     }
 
     .copy {
+        text-align: center;
+
         @include breakpoint-down(mobile-lg) {
             margin-bottom: 2rem;
         }
