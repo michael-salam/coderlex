@@ -145,7 +145,8 @@ ul {
 }
 @media (max-width: 47.9375em) {
   .navbar .links-container .links {
-    padding: 5rem 3rem;
+    text-align: right;
+    padding: 3rem;
     position: absolute;
     top: 4.5rem;
     right: 0;

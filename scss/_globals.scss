@@ -162,8 +162,8 @@ ul {
             align-items: center;
 
             @include breakpoint-down(tablet) {
-                // text-align: left;
-                padding: 5rem 3rem;
+                text-align: right;
+                padding: 3rem;
                 position: absolute;
                 top: 4.5rem;
                 right: 0;
